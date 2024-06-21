@@ -1,7 +1,7 @@
 // generate an array of numbers within a specified range and step
 const generateItemsInRange = (start, end, step) => {
     const range = [];
-    for (let i = start; i <= end; i += step) {
+    for (let i = start; i <= end-step; i += step) {
       range.push(i);
     }
     return range;
@@ -33,6 +33,7 @@ const generateItemsInRange = (start, end, step) => {
     end = 1,
     step = 1
   ) => {
+    
     // Generate the range of numbers based on start, end, and step
     const range = generateItemsInRange(start, end, step);
   
