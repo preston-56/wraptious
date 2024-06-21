@@ -10,9 +10,9 @@ describe("get_random_items_from_range test", () => {
     });
   });
 
-  it("generates 4 numbers out of 30 in random order", () => {
-    const randomItems = get_random_items_from_range(5, 10, 30, 5);
-    expect(randomItems.length).toBe(4); // Expecting 4 items instead of 5
+  it("throws an error when number of items is greater than range length", () => {
+    expect(() => get_random_items_from_range(5, 10, 30, 5)).toThrow(new Error("Out of bounds, only 4 numbers are possible"));
+    
   });
 
   it("generates only 4 numbers in random order", () => {
