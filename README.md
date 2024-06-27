@@ -27,7 +27,6 @@ After the installation, run the tests.
 npm run test
 ```
 
-NB: The second test is deliberately designed to fail.
 
 **License**
 
